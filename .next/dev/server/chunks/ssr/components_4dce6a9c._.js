@@ -87,7 +87,7 @@ void main() {
     vec3 finalColor = vec3(0.0);
     
     // Create layers of sine waves / ribbons
-    for(float i = 0.0; i < 4.0; i++) {
+  for(float i = 0.0; i < 3.0; i++) {
         // Space out the ribbons
         float z = i * 0.15 + 0.5;
         
@@ -98,7 +98,7 @@ void main() {
         float dist = sin(uv.y * 1.5 + noiseVal * 2.0 + uTime * 0.1);
         
         // Thickness / Glow
-        float intensity = 0.4 / abs(dist + 0.1);
+    float intensity = 0.25 / abs(dist + 0.1);
         
         // Soft falloff
         intensity = pow(intensity, 1.2);
@@ -107,16 +107,17 @@ void main() {
         // This traverses the spectrum across the screen
         vec3 col = spectrum(uv.y * 0.2 + i * 0.2 + uTime * 0.05);
         
-        finalColor += col * intensity * 0.15; // Accumulate light
+    finalColor += col * intensity * 0.10; // Accumulate light, slightly dimmer
     }
     
     // Vignette / Soft Edges to fade out
     // (This is implicitly handled by the sine wave receding, but we can add atmosphere)
     
     // Tone mapping to prevent harsh burnouts
-    finalColor = smoothstep(0.0, 1.2, finalColor);
+  finalColor = smoothstep(0.0, 1.0, finalColor);
 
-    fragColor = vec4(finalColor, 1.0);
+  // Slight transparency to soften overall look
+  fragColor = vec4(finalColor, 0.6);
 }
 `;
 function Aurora(props) {
@@ -136,7 +137,8 @@ function Aurora(props) {
         const gl = renderer.gl;
         gl.clearColor(0, 0, 0, 0);
         gl.enable(gl.BLEND);
-        gl.blendFunc(gl.ONE, gl.ONE); // Additive blending
+        // Softer additive blending that respects alpha
+        gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
         let program;
         function resize() {
             if (!ctn) return;
@@ -232,7 +234,7 @@ function Aurora(props) {
         className: "absolute inset-0 w-full h-full pointer-events-none -z-10"
     }, void 0, false, {
         fileName: "[project]/components/aurora.tsx",
-        lineNumber: 208,
+        lineNumber: 210,
         columnNumber: 10
     }, this);
 }

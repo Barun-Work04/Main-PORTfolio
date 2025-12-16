@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Rohan/OneDrive/Desktop/PORTFOLIO-PROFESSIONAL/components/backgrounds/ColorBends.css"],"sourcesContent":[".color-bends-container {\r\n  position: absolute;\r\n  inset: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  pointer-events: none;\r\n  z-index: 0;\r\n}\r\n\r\n.color-bends-container canvas {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUA"}}]
+}

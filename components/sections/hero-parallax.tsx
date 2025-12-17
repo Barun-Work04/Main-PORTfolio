@@ -25,7 +25,7 @@ export function HeroParallax({ imageUrl, title, description = [] }: HeroParallax
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ scale: imageScale, opacity: imageOpacity }} className="absolute inset-0">
           <div className="relative w-full h-full">
-            <Image src={imageUrl || "/placeholder.svg"} alt={title || "Hero"} fill className="object-cover" priority />
+            <Image src={imageUrl || "/cover.png"} alt={title || "Hero"} fill className="object-cover" priority />
             {/* Radial vignette overlay for feathered edges */}
             <div
               className="absolute inset-0 pointer-events-none"

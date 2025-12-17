@@ -288,6 +288,9 @@
     --color-red-300: #ffa3a3;
     --color-red-400: #ff6568;
     --color-red-600: #e40014;
+    --color-emerald-200: #a4f4cf;
+    --color-emerald-800: #005f46;
+    --color-emerald-900: #004e3b;
     --color-zinc-900: #18181b;
     --color-zinc-950: #09090b;
     --color-neutral-300: #d4d4d4;
@@ -356,6 +359,9 @@
       --color-red-300: lab(76.5514% 36.4219 15.5335);
       --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-emerald-200: lab(90.2247% -31.039 9.47084);
+      --color-emerald-800: lab(35.3675% -33.1188 8.04002);
+      --color-emerald-900: lab(28.8637% -26.9249 5.45986);
       --color-zinc-900: lab(8.30603% .618212 -2.16573);
       --color-zinc-950: lab(2.51107% .242703 -.886115);
       --color-neutral-300: lab(84.92% 0 0);
@@ -1135,10 +1141,6 @@
     height: calc(var(--spacing) * 12);
   }
 
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
-
   .h-\[1\.15rem\] {
     height: 1.15rem;
   }
@@ -1277,10 +1279,6 @@
 
   .w-12 {
     width: calc(var(--spacing) * 12);
-  }
-
-  .w-14 {
-    width: calc(var(--spacing) * 14);
   }
 
   .w-64 {
@@ -1872,6 +1870,16 @@
     border-color: var(--destructive);
   }
 
+  .border-emerald-800\/60 {
+    border-color: #005f4699;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-emerald-800\/60 {
+      border-color: color-mix(in oklab, var(--color-emerald-800) 60%, transparent);
+    }
+  }
+
   .border-input {
     border-color: var(--input);
   }
@@ -1982,6 +1990,16 @@
 
   .bg-destructive {
     background-color: var(--destructive);
+  }
+
+  .bg-emerald-900\/60 {
+    background-color: #004e3b99;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-emerald-900\/60 {
+      background-color: color-mix(in oklab, var(--color-emerald-900) 60%, transparent);
+    }
   }
 
   .bg-foreground {
@@ -2561,6 +2579,10 @@
 
   .text-destructive-foreground {
     color: var(--destructive-foreground);
+  }
+
+  .text-emerald-200 {
+    color: var(--color-emerald-200);
   }
 
   .text-foreground {
@@ -3387,6 +3409,18 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-destructive\/90:hover {
         background-color: color-mix(in oklab, var(--destructive) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-emerald-900\/70:hover {
+      background-color: #004e3bb3;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-emerald-900\/70:hover {
+        background-color: color-mix(in oklab, var(--color-emerald-900) 70%, transparent);
       }
     }
   }

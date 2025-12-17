@@ -21,11 +21,11 @@ export function BubbleMenu() {
     <div className="fixed top-8 right-8 z-50">
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-primary/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center hover:bg-primary/30 transition-colors"
+        className="w-12 h-12 rounded-full bg-emerald-900/60 backdrop-blur-xl border border-emerald-800/60 flex items-center justify-center hover:bg-emerald-900/70 transition-colors"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        {isOpen ? <X className="w-5 h-5 text-emerald-200" /> : <Menu className="w-5 h-5 text-emerald-200" />}
       </motion.button>
 
       <AnimatePresence>
@@ -34,9 +34,9 @@ export function BubbleMenu() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
-            className="absolute top-0 right-20 flex flex-row gap-3 items-center"
+            className="absolute top-1/2 right-20 -translate-y-1/2 flex flex-row gap-4 items-center"
           >
-            {menuItems.map((item, index) => (
+              {menuItems.map((item, index) => (
               <motion.div
                 key={item.label}
                 initial={{ opacity: 0, x: 20 }}
@@ -46,7 +46,7 @@ export function BubbleMenu() {
               >
                 <Link
                   href={item.href}
-                  className="px-6 py-3 rounded-full bg-primary/20 backdrop-blur-xl border border-primary/30 hover:bg-primary/30 transition-colors text-base font-medium whitespace-nowrap"
+                    className="px-6 py-3 rounded-full bg-emerald-900/60 backdrop-blur-xl border border-emerald-800/60 hover:bg-emerald-900/70 transition-colors text-base font-medium whitespace-nowrap"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

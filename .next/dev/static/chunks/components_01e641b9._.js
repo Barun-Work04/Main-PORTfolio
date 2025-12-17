@@ -311,7 +311,7 @@ function BubbleMenu() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                 onClick: ()=>setIsOpen(!isOpen),
-                className: "w-14 h-14 rounded-full bg-primary/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center hover:bg-primary/30 transition-colors",
+                className: "w-12 h-12 rounded-full bg-emerald-900/60 backdrop-blur-xl border border-emerald-800/60 flex items-center justify-center hover:bg-emerald-900/70 transition-colors",
                 whileHover: {
                     scale: 1.05
                 },
@@ -319,17 +319,17 @@ function BubbleMenu() {
                     scale: 0.95
                 },
                 children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                    className: "w-6 h-6"
+                    className: "w-5 h-5 text-emerald-200"
                 }, void 0, false, {
                     fileName: "[project]/components/navigation/bubble-menu.tsx",
                     lineNumber: 28,
                     columnNumber: 19
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
-                    className: "w-6 h-6"
+                    className: "w-5 h-5 text-emerald-200"
                 }, void 0, false, {
                     fileName: "[project]/components/navigation/bubble-menu.tsx",
                     lineNumber: 28,
-                    columnNumber: 47
+                    columnNumber: 64
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/navigation/bubble-menu.tsx",
@@ -350,7 +350,7 @@ function BubbleMenu() {
                         opacity: 0,
                         x: 20
                     },
-                    className: "absolute top-0 right-20 flex flex-row gap-3 items-center",
+                    className: "absolute top-1/2 right-20 -translate-y-1/2 flex flex-row gap-4 items-center",
                     children: menuItems.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
                                 opacity: 0,
@@ -369,7 +369,7 @@ function BubbleMenu() {
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: item.href,
-                                className: "px-6 py-3 rounded-full bg-primary/20 backdrop-blur-xl border border-primary/30 hover:bg-primary/30 transition-colors text-base font-medium whitespace-nowrap",
+                                className: "px-6 py-3 rounded-full bg-emerald-900/60 backdrop-blur-xl border border-emerald-800/60 hover:bg-emerald-900/70 transition-colors text-base font-medium whitespace-nowrap",
                                 onClick: ()=>setIsOpen(false),
                                 children: item.label
                             }, void 0, false, {

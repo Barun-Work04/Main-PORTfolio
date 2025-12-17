@@ -162,7 +162,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1tT_JqpNs7OzmZgRJFQ3ZnkWNGeBx_pPJ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rjarOAsd3DDMwWjQyi-cS13O9noYYkju/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 rounded-2xl bg-accent/20 backdrop-blur-xl border border-accent/30 hover:bg-accent/30 transition-all"

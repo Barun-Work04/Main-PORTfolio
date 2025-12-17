@@ -804,7 +804,7 @@ const experienceHighlights = [
         role: "Full Stack & AI Intern",
         description: "Worked on front-end and back-end development tasks across web-based systems and Contributed to AI-related development and AI-driven video and content creation workflows.",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"],
-        slug: "sikshak-smit"
+        slug: "shiksak-intern"
     },
     {
         id: "nielit",
@@ -820,7 +820,7 @@ const experienceHighlights = [
         role: "Core Member & Digital Lead",
         description: "Managed CPL’s digital presence; coordinated campaigns and event PR & CPL Policy Conclave (Delhi) 2025 member; supported organizing teams and handled social media management campaigns.",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
-        slug: "cpl-core-member"
+        slug: "cpl-intern"
     }
 ];
 function HomePage() {

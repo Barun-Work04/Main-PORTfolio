@@ -28,7 +28,7 @@ const experienceHighlights = [
     role: "Full Stack & AI Intern",
     description: "Worked on front-end and back-end development tasks across web-based systems and Contributed to AI-related development and AI-driven video and content creation workflows.",
     icon: GraduationCap,
-    slug: "sikshak-smit",
+    slug: "shiksak-intern",
   },
   {
     id: "nielit",
@@ -44,7 +44,7 @@ const experienceHighlights = [
     role: "Core Member & Digital Lead",
     description: "Managed CPL’s digital presence; coordinated campaigns and event PR & CPL Policy Conclave (Delhi) 2025 member; supported organizing teams and handled social media management campaigns.",
     icon: Users,
-    slug: "cpl-core-member",
+    slug: "cpl-intern",
   },
 ]
 

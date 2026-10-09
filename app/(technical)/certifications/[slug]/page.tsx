@@ -2,7 +2,16 @@ import Aurora from "@/components/aurora"
 import { BubbleMenu } from "@/components/navigation/bubble-menu"
 import { notFound } from "next/navigation"
 
-const certifications = {
+type Certification = {
+  title: string
+  issuer: string
+  duration?: string
+  topics: string[]
+  description: string
+  links: { label: string; url: string }[]
+}
+
+const certifications: Record<string, Certification> = {
   "google-cloud": {
     title: "Google Cloud Foundations",
     issuer: "Google Cloud",

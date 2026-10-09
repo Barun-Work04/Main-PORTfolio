@@ -110,6 +110,8 @@ void main() {
 
 interface AuroraProps {
   colorStops?: string[]; // Kept for prop compatibility
+  blend?: number; // Kept for prop compatibility
+  amplitude?: number; // Kept for prop compatibility
   speed?: number;
 }
 

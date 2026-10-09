@@ -1,5 +1,4 @@
 import Aurora from "@/components/aurora"
-import { BubbleMenu } from "@/components/navigation/bubble-menu"
 import { FlowingMenu } from "@/components/sections/flowing-menu"
 const projects = [
   {
@@ -24,7 +23,6 @@ export default function ProjectsPage() {
         speed={0.5}
       />
 
-      <BubbleMenu />
 
       <div className="relative z-10">
         <div className="text-center pt-32 pb-16">

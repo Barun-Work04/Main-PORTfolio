@@ -1,5 +1,4 @@
 import Aurora from "@/components/aurora"
-import { BubbleMenu } from "@/components/navigation/bubble-menu"
 
 export default function AboutPage() {
   return (
@@ -11,9 +10,8 @@ export default function AboutPage() {
         speed={0.5}
       />
 
-      <BubbleMenu />
 
-      <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
+      <div className="relative z-10 min-h-screen flex items-center justify-center px-6 pb-12 pt-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-heading text-6xl md:text-7xl font-bold mb-12 text-white text-center">About Me</h1>
 

@@ -1,5 +1,4 @@
 import Aurora from "@/components/aurora"
-import { BubbleMenu } from "@/components/navigation/bubble-menu"
 import { notFound } from "next/navigation"
 
 type Certification = {
@@ -70,6 +69,10 @@ const certifications: Record<string, Certification> = {
   },
 }
 
+// Only the slugs in the data above exist; anything else is a real 404 (also blocks keys like "constructor")
+export const dynamicParams = false
+export const generateStaticParams = () => Object.keys(certifications).map((slug) => ({ slug }))
+
 export default async function CertificationDetailPage({
   params,
 }: {
@@ -91,9 +94,8 @@ export default async function CertificationDetailPage({
         speed={0.5}
       />
 
-      <BubbleMenu />
 
-      <div className="relative z-10 min-h-screen flex items-center justify-center p-8">
+      <div className="relative z-10 min-h-screen flex items-center justify-center px-6 pb-12 pt-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
             {certification.title}

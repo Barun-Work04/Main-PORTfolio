@@ -6,7 +6,6 @@ import Link from "next/link"
 import DecryptedText from "@/components/core/decrypted-text"
 import LetterGlitch from "@/components/core/letter-glitch"
 // import ColorBends from "@/components/backgrounds/color-bends"
-import { BubbleMenu } from "@/components/navigation/bubble-menu"
 import { HeroParallax } from "@/components/sections/hero-parallax"
 import { CardSpotlight } from "@/components/ui/card-spotlight"
 import CurvedLoop from "@/components/core/curved-loop"
@@ -62,7 +61,6 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="relative">
-      <BubbleMenu />
 
       <motion.div style={{ opacity: glitchOpacity }} className="fixed inset-0 z-0 pointer-events-none">
         <LetterGlitch glitchSpeed={50} centerVignette={true} outerVignette={false} smooth={true} />

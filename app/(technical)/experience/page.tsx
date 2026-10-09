@@ -1,5 +1,4 @@
 import Aurora from "@/components/aurora"
-import { BubbleMenu } from "@/components/navigation/bubble-menu"
 import { FlowingMenu } from "@/components/sections/flowing-menu"
 
 const experiences = [
@@ -27,11 +26,10 @@ export default function ExperiencePage() {
         speed={0.5}
       />
 
-      <BubbleMenu />
 
       <div className="relative z-10">
         <div className="text-center pt-32 pb-16">
-          <h1 className="font-heading text-6xl md:text-7xl font-bold text-white">Experience</h1>
+          <h1 className="font-heading text-[clamp(1.75rem,9vw,3.75rem)] md:text-7xl font-bold text-white px-4 break-words">Experience</h1>
         </div>
 
         <FlowingMenu items={experiences} basePath="/experience" />

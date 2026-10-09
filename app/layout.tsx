@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SiteHeader } from "@/components/navigation/site-header"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({
@@ -49,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable}`}>
       <body className={`font-body antialiased`}>
+        <SiteHeader />
         {children}
         <Analytics />
       </body>
